@@ -1,0 +1,42 @@
+body{
+  display: inline-block;
+}
+div {
+  font-family: Tahoma;
+  font-size: 40px;
+  width:100px;
+  height: 150px;
+  background-color: #eeeff2;
+  border-left: 10px dotted;
+  border-color: #D0D0FF;
+  text-align: left;
+  padding-left: 10px;
+}
+.box1 {
+  margin-left: 10px;
+  display: -webkit-flex;
+	flex-direction: row;
+	position: fixed;
+	top: 10;
+	left: 10;
+}
+.box2 {
+  margin-left: 10px;
+  display: -webkit-flex;
+	flex-direction: row;
+	position: fixed;
+	top: 10;
+	left: 10;
+}
+.box4 {
+  display: -webkit-flex;
+  flex-direction: row;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.box4 :hover {
+  background-color: yellow;
+  cursor: pointer;
+}
