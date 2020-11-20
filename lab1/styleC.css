@@ -1,0 +1,71 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+div {
+  margin-top: 10px;
+  justify-content: space-between;
+}
+p {
+  margin:auto;
+  font-family: Tahoma;
+  font-size: 40px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  height: 100%
+}
+.box1 {
+  color:white;
+  background: linear-gradient(90deg, rgba(65,241,233,1) 0%, rgba(66,177,193,1) 48%, rgba(21,132,233,1) 100%);
+  border-top: 1px solid ;
+  justify-content: space-between;
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  text-align: center;
+  text-shadow: 2px 2px 5px red;
+  transition: width 2s, height 2s, transform 2s;
+}
+.box2 {
+  background: radial-gradient(circle, rgba(208,239,247,1) 0%, rgba(98,170,240,1) 70%);  color: blueviolet;
+  border-top: 1px solid;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px red;
+  margin-top: 10px;
+  width: 100px;
+  height: 100px;
+}
+.box4 {
+  margin-top: 10px;
+  background: linear-gradient(90deg, rgba(249,55,137,1) 0%, rgba(224,153,240,1) 48%, rgba(233,108,137,1) 100%);  
+  border-style: solid;
+  border-width: 4px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  opacity: 0.6;
+  transition: 0.3s;
+  justify-content: space-between;
+  width: 100px;
+  height: 100px;
+}
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_bold.woff);
+  font-weight: bold;
+}
+.box1:hover {
+  color: yellow;
+}
+.box4:hover {
+  opacity: 1;
+}
+div:hover {
+  transform: rotate(360deg);
+}

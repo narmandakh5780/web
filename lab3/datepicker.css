@@ -1,0 +1,37 @@
+.table1 {
+	width: 40%;
+	background: #0095da;
+	color: white;
+}
+.left {
+	text-align: left;
+}
+.days {
+  text-align: center;
+}
+.right {
+	text-align: right;
+}
+.table2 {
+	width: 40%;
+	background: white;
+	color: black;
+	table-layout: fixed;
+}
+.table3 {
+	width: 40%;
+	background: white;
+	color: black;
+	table-layout: fixed;
+}
+.blue {
+	text-align: center;
+	color: #0095da;
+}
+.black {
+	text-align: center;
+	color: black;
+}
+h1 {
+  color: #0095da;
+}

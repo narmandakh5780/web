@@ -1,0 +1,8 @@
+react
+angular 
+vuejs
+mongo
+
+component programing
+modudular progtaming->nodeJS  
+

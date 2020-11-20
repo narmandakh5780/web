@@ -1,0 +1,45 @@
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  justify-content: space-between;
+  display: flex;
+  flex-wrap: nowrap;
+  float: left;
+}
+p {
+  margin: auto;
+  font-family: Tahoma;
+  font-size: 40px;
+  padding-left: 10px;
+  
+}
+
+.box1, .box2 {
+  background-color: #eeeff2;
+  padding-left: 10px;
+  width:100px;
+  height: 150px;
+  border-left: 10px dotted;
+  border-color: #D0D0FF;
+  margin-left:10px;
+}
+.box4 {
+  width: 100px;
+  height: 150px;
+  background-color: #eeeff2;
+  margin-left:10px;
+  border-left: 10px;
+  border-left-color: #D0D0FF;
+  border-left-style: dotted;
+  position: absolute;
+  bottom :1%;
+  right : 1%;
+}
+.box1:hover,.box2:hover,.box4:hover {
+  color: goldenrod;
+  background-color: yellow;
+  cursor: pointer;
+}
