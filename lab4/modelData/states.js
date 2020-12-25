@@ -9,7 +9,6 @@
  */
 
 var cs142models;
-
 if (cs142models === undefined) {
    cs142models = {};
 }

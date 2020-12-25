@@ -22,10 +22,11 @@ class Example extends React.Component {
     // We can initialize it here.
     // We read the example model data into the state variable 'name'
     this.state = {
-      name: window.cs142models.exampleModel().name,
+      name: "Narmandakh",
       counter: 0,
-      inputValue: '',
+      inputValue: 'Энд гарж ирнэ ',
       buttonWasClicked: '',
+      a: true
     };
 
     // React events are called directly from DOM event handlers
@@ -67,6 +68,7 @@ class Example extends React.Component {
   // Method called when the input box is typed into.
   handleChange(event) {
     this.setState({ inputValue: event.target.value });
+
   }
 
   // Method called when the button is pushed
@@ -96,16 +98,17 @@ class Example extends React.Component {
 
     return retVal;
   }
-
+  
   render() {
     return (
-      <div className="container Example">
+
+      <div className="container Example" style={{backgroundColor:"white"}}>
         <h1>CS142 Project#4 React.js Example</h1>
-
         <div className="motto-update">
-          {/* Your problem #1 motto displaying and updating widget goes here */}
+        <label htmlFor="inId">Та энд ямар нэг зүйл бичнэ үү : </label>
+          <input type="text"  onChange={this.handleChangeBound}/>
+          <p id='motto'>Таны бичсэн зүйл: {this.state.inputValue}</p>
         </div>
-
         <p>
           This view is an example of a
           &nbsp;
@@ -239,7 +242,7 @@ class Example extends React.Component {
         <p>
             Another way of accomplishing this is embedding the operations inside
             of curly braces. Although arbitrary JavaScript can appear inside
-            braces, it must return a string or JSX expression to work.
+            braces, it Fst return a string or JSX expression to work.
             JavaScript control flow operations such as if, for, and while do
             not return values so templates
             like <code>{'{if (bool) ... else ...}'}</code> do not work.
